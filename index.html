@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="weather.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <h1 class="header"> Current Weather Display</h1>
+    <p class="intro">This is weather display website that show the live current weather across the world. 
+        You just have to type the city you want to know the weather in the search field and click search. 
+        with that you can access to the weather information of the city.
+    </p>
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="enter the city" id="search" spellcheck="false">
+           <button id="searchbtn"><img src="./images/search.png" ></button> 
+        </div>
+        <div class="error" id="errorM"></div>
+      <div class="contain1">
+           <div class="weather">
+                <img src="" id="weatherimg" >
+                <h1 id="temp"></h1>
+                <h1 id="city"></h1>
+           </div>
+           <div class="contain">
+                <div class="WH">
+                    <img src="./images/humidity.png" >
+                    <div>
+                        <p class="humidity" id="humidity"></p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="WH">
+                    <img src="./images/wind.png">
+                    <div>
+                    <p class="wind" id="wind"></p>
+                    <p>wind speed</p>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+   <script src="weather.js">
+
+   </script>
+</body>
+</html>
